@@ -1,0 +1,4 @@
+SELECT E.*
+FROM Emp E
+INNER JOIN Emp M ON E.Mgr = M.EmpNo
+WHERE M.Ename = 'Stefen';
