@@ -1,0 +1,3 @@
+SELECT Ename
+FROM Emp
+ORDER BY Ename DESC;
