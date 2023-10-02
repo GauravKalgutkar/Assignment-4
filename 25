@@ -1,0 +1,14 @@
+SELECT M.Ename AS ManagerName
+FROM Emp M
+WHERE (
+    SELECT COUNT(*) 
+    FROM Emp E 
+    WHERE E.Mgr = M.EmpNo
+) = (
+    SELECT MAX(ManagerCount)
+    FROM (
+        SELECT M.EmpNo, COUNT(*) AS ManagerCount
+        FROM Emp M
+        GROUP BY M.EmpNo
+    ) AS ManagerCounts
+);
