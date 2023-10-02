@@ -1,0 +1,2 @@
+SELECT Ename, (Sal + ISNULL(Commission, 0)) AS GrossSalary
+FROM Emp;
