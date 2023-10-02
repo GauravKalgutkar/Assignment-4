@@ -1,0 +1,2 @@
+SELECT MIN(Sal) AS MinSalary, MAX(Sal) AS MaxSalary, AVG(Sal) AS AvgSalary
+FROM Emp;
