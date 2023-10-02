@@ -1,0 +1,3 @@
+SELECT Loc, COUNT(*) AS NumberOfEmployees
+FROM Emp
+GROUP BY Loc;
