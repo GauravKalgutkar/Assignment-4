@@ -1,0 +1,2 @@
+DELETE FROM Emp
+WHERE Loc = 'Chennai';
