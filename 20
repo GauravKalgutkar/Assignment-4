@@ -1,0 +1,2 @@
+SELECT LEFT(Ename, 3) + CAST(Sal AS VARCHAR) AS NewColumn
+FROM Emp;
